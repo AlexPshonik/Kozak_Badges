@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <container name="product.badges" htmlTag="div" htmlClass="product-badges__container" before="product.info.main">
+                <block class="Kozak\Badges\Block\Badges" name="product-badges"
+                       template="Kozak_Badges::product/page/badges.phtml">
+                </block>
+            </container>
+        </referenceContainer>
+    </body>
+</page>

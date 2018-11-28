@@ -1,0 +1,32 @@
+@badge-sale: #ff7070;
+@badge-free-shipping: #69de69;
+@badge-best-seller: #6464ff;
+
+.product-badges {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    order: -2;
+  }
+  &__item {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 3px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &_sale {
+      background-color: @badge-sale;
+    }
+    &_free-shipping {
+      background-color: @badge-free-shipping;
+    }
+    &_best-seller {
+      background-color: @badge-best-seller;
+    }
+  }
+}

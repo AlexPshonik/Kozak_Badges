@@ -1,0 +1,12 @@
+<?php
+    /**
+     * @var $block Kozak\Badges\Block\Badges
+     */
+    $_badges = $block->getBadge($block->getProduct());
+?>
+
+<?php foreach ($_badges as $badge): ?>
+    <div class="product-badges__item product-badges__item_<?php echo $badge['class']?>">
+        <?php echo $badge['label'] ?>
+    </div>
+<?php endforeach; ?>
